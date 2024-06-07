@@ -1,7 +1,7 @@
 
 
 import styles from '../../styles/Pokemon.module.css'
-
+import { useRouter } from 'next/router'
 export const getStaticPaths = async () => {
     
     
@@ -20,7 +20,7 @@ export const getStaticPaths = async () => {
 
 
     return {
-        paths,fallback:false,
+        paths,fallback:true,
     }
 
 }
@@ -41,7 +41,13 @@ export const getStaticProps = async (context) => {
 
 
 
-export default function PokemonId({pokemon}) {
+export default function PokemonId({ pokemon }) {
+    const router = useRouter();
+
+    if (router.isFallback) {
+        return <><div>Carregando...</div></>
+    }
+
     return (<>
     
         
