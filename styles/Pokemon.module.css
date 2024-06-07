@@ -1,0 +1,65 @@
+.pokemonContainer{
+    
+    box-shadow: 0 1px 1px rgba(0,0,0,.1);
+    margin: 0 auto;
+    text-align: center;
+    background: white;
+    width: 300px;
+    border-radius: 4%;
+}
+
+.title{
+    font-size: 2.5em;
+    text-transform: capitalize;
+    background-color: rgb(237,85,100);
+    color: white;
+    padding: .3em;
+    width: 300px;
+    margin: .8em auto;
+    border-radius: 4%;
+    
+}
+
+.pokemonContainer h3{
+    margin: 0.6em auto;
+    font-size: 1.2em;
+}
+
+.typesContainer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+
+}
+.type{
+    padding: .6em 1em;
+    color: white;
+    background-color: black;
+    margin-right: .5em;
+    border: 1px solid #CCC;
+    border-radius: 6px;
+    text-transform: uppercase;
+    font-size: .8em;
+
+}
+
+.dataContainer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: .5em;
+}
+
+.dataContainer div{
+    margin: 1em 0;
+    padding: 0 1em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.dataHeight{
+    border-right: solid 1px black;
+}
