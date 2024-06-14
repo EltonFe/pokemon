@@ -12,7 +12,7 @@ export default function NavBar() {
                 </div>
                 <ul className={styles.ul}>
                     <li><Link href="/">Home</Link></li>
-                    <li><Link href="About">Sobre</Link></li>
+                    <li><Link href="/About">Sobre</Link></li>
                 </ul>
             </nav>
         
